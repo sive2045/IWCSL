@@ -8,7 +8,7 @@ def index(request):
     context = {
         'latest_event_list' : latest_event_list,
     }
-    return render(request, 'cctv/index.html', context)
+    return render(request, 'cctv/index.html')
 
 def detail(request, event_id):
     return HttpResponse("You're looking at question %s" %event_id)
